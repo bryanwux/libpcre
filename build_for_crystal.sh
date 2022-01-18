@@ -31,7 +31,7 @@ $CONFIGURE --host wasm32 \
   --enable-unicode-properties \
   --disable-shared \
   --disable-cpp
-
+autoreconf -f -i
 $MAKE
 
 mkdir -p "targets/$target"
